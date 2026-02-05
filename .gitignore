@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.venv1/
+venv/
+
+# PyCharm
+.idea/
+
+# Pytest cache
+.pytest_cache/
+
+# Reports (optional – recommended)
+reports/
+
+# OS
+.DS_Store
+Thumbs.db
