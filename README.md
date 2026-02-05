@@ -1,69 +1,36 @@
-# End-to-End Test Automation Framework
+# End-to-End Selenium Test Automation Framework
 
-''' bash  Overview
-This framework automates critical user flows of a demo web application and demonstrates:
+A professional **end-to-end test automation framework** built using **Python, Selenium, and PyTest**, following **Page Object Model (POM)** design principles.
 
-Real-world automation structure
+## Overview
+This framework supports:
+- Cross-browser testing
+- Data-driven testing using JSON
+- PyTest fixtures and hooks
+- HTML reporting with screenshots on failure
+- Clean and scalable project structure
 
-Page Object Model (POM) design pattern
+## Tech Stack
+- Python 3.11+
+- Selenium WebDriver
+- PyTest
+- webdriver-manager
+- pytest-html
 
-Data-driven testing using JSON
+## 🔹 How to Run the Tests
+### 1️⃣ Create and activate virtual environment
 
-PyTest fixtures, markers, and reporting
-
-Screenshot capture on test failure
-
-⚠️ The goal of this project is automation design & framework understanding, not just running tests.  '''
-
-🔹 Tech Stack
-
-Language: Python 3.x
-
-Automation Tool: Selenium WebDriver
-
-Test Framework: PyTest
-
-Design Pattern: Page Object Model (POM)
-
-Reporting: pytest-html
-
-Driver Management: webdriver-manager
-
-🔹 Key Features
-
-✅ Page Object Model (POM)
-✅ Data-driven testing using JSON
-✅ HTML test reports
-✅ Screenshot capture on failure
-✅ PyTest fixtures & markers
-✅ Interview-friendly architecture
-
-🔹 Demo Application
-
-Tests are executed against the following public demo site:
-
-🔗 https://rahulshettyacademy.com/loginpagePractise/
-
-Note:
-This is a public demo application.
-Credentials, UI behavior, or flows may change without notice.
-
-🔹 How to Run the Tests
-1️⃣ Create & activate virtual environment
+```bash
 python -m venv .venv
 .venv\Scripts\activate
-
 2️⃣ Install dependencies
 pip install -r requirements.txt
-
-3️⃣ Run tests normally
+3️⃣ Run tests
 pytest -v -s
-
 4️⃣ Run tests with HTML report
 pytest --browser_name=chrome --html=reports/report.html --self-contained-html
 
 🔹 Reports
-
 HTML reports are generated using pytest-html
 
 Screenshots are automatically captured on test failure
@@ -72,35 +39,35 @@ Reports are generated inside the reports/ directory
 
 Reports are excluded from GitHub using .gitignore
 
-🔹 Why This Project?
+🔹 Demo Application
+Tests are executed against the following demo application:
 
+🔗 https://rahulshettyacademy.com/loginpagePractise/
+
+Note:
+
+This is a public demo site
+
+UI behavior or credentials may change
+
+The focus of this project is framework design and automation flow
+
+🔹 Why This Project?
 This project was created to:
 
 Apply Selenium automation concepts in a real framework
 
-Practice industry-level test architecture
-
-Build a project that can be clearly explained in interviews
-
-Avoid copy-paste automation and focus on conceptual understanding
+Practice industry-level test structure
 
 🔹 Author
-
 Sheetal Kadian
 Aspiring QA / Automation Engineer
 
 🔹 Future Enhancements
-
-CI/CD integration (GitHub Actions)
+CI/CD integration using GitHub Actions
 
 Parallel execution
 
 Logging framework
 
 Environment-based configuration
-
-Browser grid support
-
-⭐ If you find this project useful, feel free to star the repository!
-
-
