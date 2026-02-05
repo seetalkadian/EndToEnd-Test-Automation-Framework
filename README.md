@@ -66,37 +66,26 @@ pytest -v -s
 4️. Run tests with HTML report
 pytest --browser_name=chrome --html=reports/report.html --self-contained-html
 
-📃Reports
-HTML reports are generated using pytest-html
+## 🔹 Reports
 
-Screenshots are automatically captured on test failure
+- HTML reports are generated using **pytest-html**
+- Screenshots are automatically captured on **test failure**
+- Reports are excluded from GitHub using `.gitignore`
+- Reports are generated inside the `reports/` directory
 
-Reports are excluded from GitHub using .gitignore
+---
 
-## Demo Application
-Tests are executed against the following demo site:
+## 🔹 Demo Application
 
-https://rahulshettyacademy.com/loginpagePractise/
-Note: This is a demo site; credentials and behavior may be unstable.
-The framework focuses on automation design and flow validation.
+Tests are executed against the following demo application:
 
-## Why This Project?
-This project was created to:
+🔗 https://rahulshettyacademy.com/loginpagePractise/
 
-Apply Selenium automation concepts in a real framework
-
-Practice industry-level test structure
-
-## Author
-Seetal Kadian
-Aspiring QA / Automation Engineer
-
-## Future Enhancements
-CI/CD integration (GitHub Actions)
-
-Parallel execution
-
-Logging framework
-
-Environment-based configuration
-
+> **Note:**  
+> This is a public demo site.  
+> Credentials, UI behavior, or flows may change without notice.  
+>  
+> The primary goal of this framework is to demonstrate:
+> - Automation framework design
+> - Page Object Model implementation
+> - End-to-end test flow validation
