@@ -20,7 +20,7 @@ This framework supports:
 ## 🔹 How to Run the Tests
 ### 1️⃣ Create and activate virtual environment
 
-```bash
+bash
 python -m venv .venv
 .venv\Scripts\activate
 2️⃣ Install dependencies
@@ -71,3 +71,4 @@ Parallel execution
 Logging framework
 
 Environment-based configuration
+
