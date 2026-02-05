@@ -1,6 +1,6 @@
 # End-to-End Selenium Test Automation Framework
-
-A professional **end-to-end test automation framework** built using **Python, Selenium, and PyTest**, following **Page Object Model (POM)** design principles.
+A professional end-to-end test automation framework built using Python, Selenium, and PyTest, following Page Object Model (POM) design principles.
+This project demonstrates real-world automation practices.
 
 ## Overview
 This framework supports:
@@ -11,64 +11,65 @@ This framework supports:
 - Clean and scalable project structure
 
 ## Tech Stack
+
 - Python 3.11+
 - Selenium WebDriver
 - PyTest
 - webdriver-manager
 - pytest-html
 
-## 🔹 How to Run the Tests
-### 1️⃣ Create and activate virtual environment
+## How to Run the Tests
 
-bash
-python -m venv .venv
-.venv\Scripts\activate
-2️⃣ Install dependencies
-pip install -r requirements.txt
-3️⃣ Run tests
-pytest -v -s
-4️⃣ Run tests with HTML report
-pytest --browser_name=chrome --html=reports/report.html --self-contained-html
+### Create and activate virtual environment
 
-🔹 Reports
-HTML reports are generated using pytest-html
+python -m venv .venv  
+.venv\Scripts\activate  
 
-Screenshots are automatically captured on test failure
+### Install dependencies
 
-Reports are generated inside the reports/ directory
+pip install -r requirements.txt  
 
-Reports are excluded from GitHub using .gitignore
+### Run tests
 
-🔹 Demo Application
+pytest -v -s  
+
+### Run tests with HTML report
+
+pytest --browser_name=chrome --html=reports/report.html --self-contained-html  
+
+## Reports
+
+- HTML reports are generated using pytest-html
+- Screenshots are automatically captured on test failure
+- Reports are generated inside the reports directory
+- Reports are excluded from GitHub using .gitignore
+
+## Demo Application
+
 Tests are executed against the following demo application:
 
-🔗 https://rahulshettyacademy.com/loginpagePractise/
+https://rahulshettyacademy.com/loginpagePractise/
 
 Note:
+This is a public demo site.  
+UI behavior or credentials may change.  
+The framework focuses on automation design and flow validation.
 
-This is a public demo site
+## Why This Project
 
-UI behavior or credentials may change
-
-The focus of this project is framework design and automation flow
-
-🔹 Why This Project?
 This project was created to:
 
-Apply Selenium automation concepts in a real framework
+- Apply Selenium automation concepts in a real framework
+- Practice industry-level test structure
 
-Practice industry-level test structure
+## Author
 
-🔹 Author
-Sheetal Kadian
+Sheetal Kadian  
 Aspiring QA / Automation Engineer
 
-🔹 Future Enhancements
-CI/CD integration using GitHub Actions
+## Future Enhancements
 
-Parallel execution
-
-Logging framework
-
-Environment-based configuration
-
+- CI/CD integration using GitHub Actions
+- Parallel execution
+- Logging framework
+- Environment-based configuration
