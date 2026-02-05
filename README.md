@@ -1,6 +1,6 @@
 # End-to-End Test Automation Framework
 
-''' Overview
+''' bash  Overview
 This framework automates critical user flows of a demo web application and demonstrates:
 
 Real-world automation structure
@@ -102,4 +102,5 @@ Environment-based configuration
 Browser grid support
 
 ⭐ If you find this project useful, feel free to star the repository!
+
 
