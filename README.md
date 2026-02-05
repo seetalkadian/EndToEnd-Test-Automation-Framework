@@ -1,6 +1,6 @@
 # End-to-End Test Automation Framework
 
-🔹 Overview
+''' Overview
 This framework automates critical user flows of a demo web application and demonstrates:
 
 Real-world automation structure
@@ -13,7 +13,7 @@ PyTest fixtures, markers, and reporting
 
 Screenshot capture on test failure
 
-⚠️ The goal of this project is automation design & framework understanding, not just running tests.
+⚠️ The goal of this project is automation design & framework understanding, not just running tests.  '''
 
 🔹 Tech Stack
 
@@ -28,31 +28,6 @@ Design Pattern: Page Object Model (POM)
 Reporting: pytest-html
 
 Driver Management: webdriver-manager
-
-🔹 Project Structure
-EndToEnd-Test-Automation-Framework/
-│
-├── pageObjects/          # Page classes (POM)
-│   ├── LoginPage.py
-│   └── CheckoutPage.py
-│
-├── utilities/            # Reusable utilities
-│   ├── BaseClass.py
-│   └── ScreenshotUtil.py
-│
-├── tests/                # Test cases
-│   └── test_e2e.py
-│
-├── data/                 # Test data
-│   └── test_e2e.json
-│
-├── reports/              # HTML reports (ignored in Git)
-│
-├── pytest.ini             # PyTest configuration
-├── requirements.txt       # Dependencies
-├── .gitignore
-├── ARCHITECTURE.md        # Framework explanation
-└── README.md
 
 🔹 Key Features
 
@@ -127,3 +102,4 @@ Environment-based configuration
 Browser grid support
 
 ⭐ If you find this project useful, feel free to star the repository!
+
