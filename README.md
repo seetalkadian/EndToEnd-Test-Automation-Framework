@@ -1,91 +1,129 @@
 # End-to-End Test Automation Framework
 
-## Overview
-This project is an end-to-end Selenium test automation framework built using "Python", "PyTest", and the "Page Object Model (POM)" design pattern.
+🔹 Overview
+This framework automates critical user flows of a demo web application and demonstrates:
 
-The framework is designed to automate real user flows on a web application and demonstrate best practices used in industry-level test automation projects.
+Real-world automation structure
 
-## Key Features
-- Page Object Model (POM) for maintainable test design
-- PyTest fixtures for browser and test setup
-- Data-driven testing using JSON
-- Cross-browser execution (Chrome, Firefox)
-- HTML test reports with screenshots on failure
-- Clean and scalable folder structure
-- Easy to extend for new test cases
+Page Object Model (POM) design pattern
 
-## Tech Stack
-- Python
-- Selenium WebDriver
-- PyTest
-- webdriver-manager
-- pytest-html
+Data-driven testing using JSON
 
-## Project Structure
-EndToEnd_Test_Automation_Framework/
+PyTest fixtures, markers, and reporting
+
+Screenshot capture on test failure
+
+⚠️ The goal of this project is automation design & framework understanding, not just running tests.
+
+🔹 Tech Stack
+
+Language: Python 3.x
+
+Automation Tool: Selenium WebDriver
+
+Test Framework: PyTest
+
+Design Pattern: Page Object Model (POM)
+
+Reporting: pytest-html
+
+Driver Management: webdriver-manager
+
+🔹 Project Structure
+EndToEnd-Test-Automation-Framework/
 │
-├── pageObjects/ # Page Object classes
-│ ├── login.py
-│ ├── ShopePage.py
-│ └── checkout_confirmation.py
+├── pageObjects/          # Page classes (POM)
+│   ├── LoginPage.py
+│   └── CheckoutPage.py
 │
-├── tests/ # Test cases
-│ └── test_e2e.py
+├── utilities/            # Reusable utilities
+│   ├── BaseClass.py
+│   └── ScreenshotUtil.py
 │
-├── utils/ # Utility classes
-│ └── BrowserUtils.py
+├── tests/                # Test cases
+│   └── test_e2e.py
 │
-├── data/ # Test data (JSON)
-│ └── test_e2e.json
+├── data/                 # Test data
+│   └── test_e2e.json
 │
-├── reports/ # HTML reports (ignored in Git)
+├── reports/              # HTML reports (ignored in Git)
 │
-├── conftest.py # PyTest fixtures & hooks
-├── pytest.ini # PyTest configuration
-├── requirements.txt # Project dependencies
-├── README.md
-└── ARCHITECTURE.md
+├── pytest.ini             # PyTest configuration
+├── requirements.txt       # Dependencies
+├── .gitignore
+├── ARCHITECTURE.md        # Framework explanation
+└── README.md
 
-## Framework Architecture
-- **Tests** contain only test logic
-- **Page Objects** handle element locators and page actions
-- **Fixtures** manage browser setup and teardown
-- **Utilities** provide reusable helper methods
-- **JSON** files store test data separately from test logic
+🔹 Key Features
 
-## How to Run the Tests
+✅ Page Object Model (POM)
+✅ Data-driven testing using JSON
+✅ HTML test reports
+✅ Screenshot capture on failure
+✅ PyTest fixtures & markers
+✅ Interview-friendly architecture
 
-1. Create and activate virtual environment
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-2️. Install dependencies
-pip install -r requirements.txt
-3️. Run tests
-pytest -v -s
-4️. Run tests with HTML report
-pytest --browser_name=chrome --html=reports/report.html --self-contained-html
+🔹 Demo Application
 
-## 🔹 Reports
-
-- HTML reports are generated using **pytest-html**
-- Screenshots are automatically captured on **test failure**
-- Reports are excluded from GitHub using `.gitignore`
-- Reports are generated inside the `reports/` directory
-
----
-
-## 🔹 Demo Application
-
-Tests are executed against the following demo application:
+Tests are executed against the following public demo site:
 
 🔗 https://rahulshettyacademy.com/loginpagePractise/
 
-> **Note:**  
-> This is a public demo site.  
-> Credentials, UI behavior, or flows may change without notice.  
->  
-> The primary goal of this framework is to demonstrate:
-> - Automation framework design
-> - Page Object Model implementation
-> - End-to-end test flow validation
+Note:
+This is a public demo application.
+Credentials, UI behavior, or flows may change without notice.
+
+🔹 How to Run the Tests
+1️⃣ Create & activate virtual environment
+python -m venv .venv
+.venv\Scripts\activate
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Run tests normally
+pytest -v -s
+
+4️⃣ Run tests with HTML report
+pytest --browser_name=chrome --html=reports/report.html --self-contained-html
+
+🔹 Reports
+
+HTML reports are generated using pytest-html
+
+Screenshots are automatically captured on test failure
+
+Reports are generated inside the reports/ directory
+
+Reports are excluded from GitHub using .gitignore
+
+🔹 Why This Project?
+
+This project was created to:
+
+Apply Selenium automation concepts in a real framework
+
+Practice industry-level test architecture
+
+Build a project that can be clearly explained in interviews
+
+Avoid copy-paste automation and focus on conceptual understanding
+
+🔹 Author
+
+Sheetal Kadian
+Aspiring QA / Automation Engineer
+
+🔹 Future Enhancements
+
+CI/CD integration (GitHub Actions)
+
+Parallel execution
+
+Logging framework
+
+Environment-based configuration
+
+Browser grid support
+
+⭐ If you find this project useful, feel free to star the repository!
